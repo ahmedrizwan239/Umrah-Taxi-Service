@@ -5571,7 +5571,7 @@ li:hover .sidebar__comments__icon {
 .contact-top__item__icon {
   position: relative;
   z-index: 1;
-  margin-top: -44px;
+  margin-top: 27px;
   margin-bottom: 27px;
 }
 .contact-top__item__icon__inner {
