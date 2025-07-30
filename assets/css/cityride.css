@@ -16069,6 +16069,9 @@ li:hover .sidebar__comments__icon {
 .pricing-card__image img {
   width: 100%;
   display: block;
+  max-height: 140px;
+  object-fit: contain;
+  padding-top: 16px;
 }
 .pricing-card__price {
   margin: 0;
