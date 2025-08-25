@@ -3315,7 +3315,7 @@ body.megamenu-popup-active .mobile-nav__content {
   z-index: 999;
   transform: translateX(-100%);
   transform-origin: left center;
-  transition: transform 500ms ease 500ms, visibility 500ms ease 500ms;
+  /* transition: transform 500ms ease 500ms, visibility 500ms ease 500ms; */
   visibility: hidden;
   position: fixed;
 }
@@ -3344,14 +3344,14 @@ body.megamenu-popup-active .mobile-nav__content {
   opacity: 1;
   transform: translateX(0%);
   visibility: visible;
-  transition: transform 500ms ease 0ms, visibility 500ms ease 0ms;
+  /* transition: transform 500ms ease 0ms, visibility 500ms ease 0ms; */
 }
 .mobile-nav__wrapper.expanded .mobile-nav__content {
   opacity: 1;
   visibility: visible;
   transform: translateX(0);
-  transition: opacity 500ms ease 500ms, visibility 500ms ease 500ms,
-    transform 500ms ease 500ms;
+  /* transition: opacity 500ms ease 500ms, visibility 500ms ease 500ms,
+    transform 500ms ease 500ms; */
 }
 
 .mobile-nav__overlay {
