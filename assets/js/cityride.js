@@ -439,16 +439,23 @@
         $(this)
           .find(".accordion-title")
           .on("click", function () {
-            if ($(this).parent().hasClass("active") === false) {
-              $(".cityride-accordion." + accordionName)
-                .find(".accordion")
-                .removeClass("active");
-              $(".cityride-accordion." + accordionName)
-                .find(".accordion")
-                .find(".accordion-content")
-                .slideUp();
-              $(this).parent().addClass("active");
-              $(this).parent().find(".accordion-content").slideDown();
+            var $this = $(this);
+            var $parent = $this.parent();
+            var isActive = $parent.hasClass("active");
+            
+            // Close all accordions in this group
+            $(".cityride-accordion." + accordionName)
+              .find(".accordion")
+              .removeClass("active");
+            $(".cityride-accordion." + accordionName)
+              .find(".accordion")
+              .find(".accordion-content")
+              .slideUp();
+            
+            // If the clicked accordion wasn't active, open it
+            if (!isActive) {
+              $parent.addClass("active");
+              $parent.find(".accordion-content").slideDown();
             }
           });
       });

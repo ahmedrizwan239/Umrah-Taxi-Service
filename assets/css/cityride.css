@@ -17467,4 +17467,143 @@ body.boxed-wrapper .download-app-three::after {
   right: -1px;
   clip-path: polygon(34% 0%, 100% 0, 100% 100%, 0% 100%);
 }
+
+/*--------------------------------------------------------------
+# Pricing Table Styles
+--------------------------------------------------------------*/
+.pricing-table {
+  margin: 20px 0;
+}
+
+.pricing-table .table {
+  margin-bottom: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.pricing-table .table thead th {
+  background-color: var(--cityride-base, #fed100);
+  color: var(--cityride-black, #141414);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 15px 20px;
+  border: none;
+  text-align: center;
+}
+
+.pricing-table .table tbody td {
+  padding: 12px 20px;
+  border: none;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: middle;
+  font-size: 14px;
+  color: var(--cityride-gray, #6c757d);
+}
+
+.pricing-table .table tbody tr:nth-child(odd) {
+  background-color: rgba(254, 209, 0, 0.05);
+}
+
+.pricing-table .table tbody tr:hover {
+  background-color: rgba(254, 209, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.pricing-table .table tbody td:last-child {
+  font-weight: 600;
+  color: var(--cityride-black, #141414);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .pricing-table .table thead th,
+  .pricing-table .table tbody td {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+}
+
+/* Full Width Two Column Pricing Table */
+.pricing-table-full {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.pricing-table-full .table {
+  margin-bottom: 0;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
+
+.pricing-table-full .table thead th {
+  background-color: var(--cityride-base, #fed100);
+  color: var(--cityride-black, #141414);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 15px 20px;
+  border: none;
+  text-align: center;
+  width: 25%;
+}
+
+.pricing-table-full .table tbody td {
+  padding: 12px 20px;
+  border: none;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: middle;
+  font-size: 14px;
+  color: var(--cityride-gray, #6c757d);
+  width: 25%;
+}
+
+.pricing-table-full .table tbody td:nth-child(1),
+.pricing-table-full .table tbody td:nth-child(3) {
+  color: #585858;
+}
+
+.pricing-table-full .table tbody tr:nth-child(odd) {
+  background-color: rgba(254, 209, 0, 0.05);
+}
+
+.pricing-table-full .table tbody tr:hover {
+  background-color: rgba(254, 209, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.pricing-table-full .table tbody td:nth-child(2),
+.pricing-table-full .table tbody td:nth-child(4) {
+  font-weight: 600;
+  color: var(--cityride-black, #141414);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .pricing-table-full .table thead th,
+  .pricing-table-full .table tbody td {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  
+  .pricing-table-full .table tbody td {
+    word-break: break-word;
+  }
+  
+  /* Hide the third and fourth columns on mobile to make it single column */
+  .pricing-table-full .table thead th:nth-child(3),
+  .pricing-table-full .table thead th:nth-child(4),
+  .pricing-table-full .table tbody td:nth-child(3),
+  .pricing-table-full .table tbody td:nth-child(4) {
+    display: none;
+  }
+  
+  /* Adjust width for single column layout */
+  .pricing-table-full .table thead th:nth-child(1),
+  .pricing-table-full .table thead th:nth-child(2),
+  .pricing-table-full .table tbody td:nth-child(1),
+  .pricing-table-full .table tbody td:nth-child(2) {
+    width: 50%;
+  }
+}
+
 /*# sourceMappingURL=cityride.css.map */
