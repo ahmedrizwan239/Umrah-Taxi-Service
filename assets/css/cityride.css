@@ -15813,6 +15813,40 @@ li:hover .sidebar__comments__icon {
 .faq-accordion .active .accordion-title__icon::after {
   opacity: 1;
 }
+
+
+/* Mobile layout reordering for service tabs */
+@media (max-width: 991px) {
+  .why-choose-one__item .row.gutter-y-40 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .why-choose-one__item .col-lg-5 {
+    order: 1; /* Car image first */
+  }
+  
+  .why-choose-one__item .col-lg-7 {
+    order: 2; /* Content second */
+  }
+  
+  .why-choose-one__item .why-choose-one__btn-box {
+    order: 1; /* Book now button first in content */
+    margin-bottom: 1.5rem;
+  }
+  
+  .why-choose-one__item .why-choose-one__text {
+    order: 2; /* Description text last */
+  }
+  
+  .why-choose-one__item .why-choose-one__list {
+    order: 3; /* Features list after text */
+  }
+  
+  .why-choose-one__item .faq-accordion {
+    order: 4; /* Accordion last */
+  }
+}
 .faq-accordion .accordion-content .inner {
   padding: 8px 20px 21px 13px;
 }
