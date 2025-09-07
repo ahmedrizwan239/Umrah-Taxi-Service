@@ -62,13 +62,14 @@
                         </li>
                     </ul><!-- /.list-unstyled topbar__info -->
                     <div class="topbar__right">
+                        <div id="google_translate_element" style="display: none;"></div>
                         <div class="topbar__language">
                             <label class="sr-only" for="language-select-header">select language</label><!-- /.sr-only -->
                             <select class="selectpicker" id="language-select-header">
-                                <option value="english">English</option>
-                                <option value="arabic">Arabic</option>
-                                <option value="banglades">Bangladesh</option>
-                                <option value="Pakistan">Pakistan</option>
+                                <option value="en">English</option>
+                                <option value="ar">Arabic</option>
+                                <option value="bn">Bangladesh</option>
+                                <option value="ur">Pakistan</option>
                             </select>
                         </div><!-- /.topbar__language -->
                     </div><!-- /.topbar__right -->
@@ -1409,6 +1410,10 @@
     <script src="assets/vendors/jquery-lettering/jquery.lettering.min.js"></script>
     <!-- template js -->
     <script src="assets/js/cityride.js"></script>
+    
+    <!-- Google translate script -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="assets/js/google-translate.js"></script>
 
     <script>
     // List of external image URLs to use in the gallery
