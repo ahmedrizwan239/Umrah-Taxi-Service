@@ -1,26 +1,25 @@
 // Google Translate functionality
 function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
 }
 
 // Initialize Google Translate when DOM is loaded
-document.addEventListener("DOMContentLoaded", function() {
-    // Your custom dropdown
-    var customDropdown = document.getElementById("language-select-header");
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdownIds = ["language-select-mobile", "language-select-desktop"];
 
-    if (customDropdown) {
-        customDropdown.addEventListener("change", function() {
-            var langCode = this.value;
-            // Get the Google Translate dropdown (the one Google injects)
-            var googleDropdown = document.querySelector("#google_translate_element .goog-te-combo");
+    dropdownIds.forEach(function (id) {
+        const dropdown = document.getElementById(id);
 
-            if (langCode && googleDropdown) {
-                // Set the value on Google Translate dropdown
-                googleDropdown.value = langCode;
+        if (dropdown) {
+            dropdown.addEventListener("change", function () {
+                const langCode = this.value;
+                const googleDropdown = document.querySelector("#google_translate_element .goog-te-combo");
 
-                // Dispatch the 'change' event on Google dropdown to trigger translation
-                googleDropdown.dispatchEvent(new Event('change'));
-            }
-        });
-    }
+                if (langCode && googleDropdown) {
+                    googleDropdown.value = langCode;
+                    googleDropdown.dispatchEvent(new Event('change'));
+                }
+            });
+        }
+    });
 });

@@ -2442,8 +2442,21 @@ li:hover .topbar__info__icon {
   align-items: center;
   justify-content: flex-end;
 }
-.main-header__nav {
-  margin-right: 60px;
+
+.topbar__language.topbar__language-mobile {
+  display: block;
+  margin-right: 1rem;
+}
+
+/* Show and style on larger screens (1200px and above) */
+@media screen and (min-width: 1200px) {
+  .main-header__nav {
+    margin-right: 60px;
+  }
+  .topbar__language.topbar__language-mobile {
+    display: none;
+    margin-right: 0;
+  }
 }
 .main-header__search,
 .main-header__cart {
