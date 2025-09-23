@@ -17562,6 +17562,10 @@ body.boxed-wrapper .download-app-three::after {
   text-align: center;
 }
 
+.fare-table thead th {
+  background-color: var(--cityride-base);
+}
+
 @media (max-width: 768px) {
   .pricing-table .table thead th,
   .pricing-table .table tbody td {
