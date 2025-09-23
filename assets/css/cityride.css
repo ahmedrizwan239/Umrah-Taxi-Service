@@ -17625,6 +17625,10 @@ body.boxed-wrapper .download-app-three::after {
   text-align: center;
 }
 
+.taxi-card__content .why-choose-one__btn-box {
+  margin-top: 0px;
+}
+
 @media (max-width: 768px) {
   .pricing-table-full .table thead th,
   .pricing-table-full .table tbody td {
@@ -17650,6 +17654,79 @@ body.boxed-wrapper .download-app-three::after {
   .pricing-table-full .table tbody td:nth-child(1),
   .pricing-table-full .table tbody td:nth-child(2) {
     width: 50%;
+  }
+}
+
+/* WhatsApp Bubble Styles */
+.whatsapp-bubble {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.whatsapp-bubble:hover {
+  background-color: #128C7E;
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-icon {
+  width: 32px;
+  height: 32px;
+  fill: white;
+}
+
+/* Pulse animation */
+.whatsapp-bubble::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #25D366;
+  animation: pulse 2s infinite;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  70% {
+      transform: scale(1.3);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1.3);
+      opacity: 0;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .whatsapp-bubble {
+      bottom: 15px;
+      left: 15px;
+      width: 55px;
+      height: 55px;
+  }
+  
+  .whatsapp-icon {
+      width: 28px;
+      height: 28px;
   }
 }
 

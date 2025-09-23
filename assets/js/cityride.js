@@ -901,4 +901,14 @@
   $(window).on("resize", function () {
     cityride_stretch();
   });
+  
+  // WhatsApp Chat Bubble initializer
+  document.addEventListener('DOMContentLoaded', function () {
+    var whatsappBubble = document.getElementById('whatsappBubble');
+    if (!whatsappBubble) return;
+    var phoneNumber = '923368896286';
+    var message = encodeURIComponent('Hello! I would like to get in touch.');
+    var whatsappURL = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + message;
+    whatsappBubble.setAttribute('href', whatsappURL);
+  });
 })(jQuery);
