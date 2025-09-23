@@ -17660,7 +17660,7 @@ body.boxed-wrapper .download-app-three::after {
 /* WhatsApp Bubble Styles */
 .whatsapp-bubble {
   position: fixed;
-  bottom: 55px;
+  bottom: 20px;
   left: 20px;
   width: 60px;
   height: 60px;
