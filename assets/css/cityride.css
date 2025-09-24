@@ -11242,7 +11242,9 @@ li:hover .sidebar__comments__icon {
   }
 }
 .why-choose-one__thumb img {
-  object-fit: cover;
+  max-width: 440px;
+  max-height: 200px;
+  object-fit: contain;
   width: 100%;
 }
 .why-choose-one__shape-left {
