@@ -10562,6 +10562,8 @@ li:hover .sidebar__comments__icon {
 .taxi-rates-one {
   position: relative;
   background-color: var(--cityride-white2, #f4f1ea);
+  z-index: 2;
+  margin-top: -130px;
 }
 .taxi-rates-one__bg {
   position: absolute;
