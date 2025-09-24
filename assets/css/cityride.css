@@ -11228,6 +11228,14 @@ li:hover .sidebar__comments__icon {
 .why-choose-one__thumb {
   position: relative;
 }
+
+@media (max-width: 991px) {
+  .why-choose-one__btn-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media (min-width: 992px) {
   .why-choose-one__thumb {
     margin-left: -45px;
@@ -15839,13 +15847,13 @@ li:hover .sidebar__comments__icon {
     order: 1; /* Car image first */
   }
   
-  .why-choose-one__item .col-lg-7 {
-    order: 2; /* Content second */
-  }
+  /* .why-choose-one__item .col-lg-7 {
+    order: 2;
+  } */
   
   .why-choose-one__item .why-choose-one__btn-box {
     order: 1; /* Book now button first in content */
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
   }
   
   .why-choose-one__item .why-choose-one__text {
@@ -17659,12 +17667,16 @@ body.boxed-wrapper .download-app-three::after {
   .pricing-table-full .table tbody td:nth-child(2) {
     width: 50%;
   }
+
+  .fare-table {
+    font-size: 14px;
+  }
 }
 
 /* WhatsApp Bubble Styles */
 .whatsapp-bubble {
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   left: 20px;
   width: 60px;
   height: 60px;
@@ -17722,7 +17734,7 @@ body.boxed-wrapper .download-app-three::after {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .whatsapp-bubble {
-      bottom: 15px;
+      bottom: 50px;
       left: 15px;
       width: 55px;
       height: 55px;
