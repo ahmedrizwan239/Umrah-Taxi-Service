@@ -6429,7 +6429,7 @@ li:hover .sidebar__comments__icon {
 }
 @media (max-width: 1199px) {
   .main-slider-one__item {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 170px;
   }
 }
@@ -6599,7 +6599,7 @@ li:hover .sidebar__comments__icon {
 }
 @media (max-width: 430px) {
   .main-slider-one__title {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 @media (max-width: 375px) {
@@ -17749,5 +17749,17 @@ body.boxed-wrapper .download-app-three::after {
       height: 28px;
   }
 }
+
+.icon-x {
+  fill: #fff;          /* white by default */
+  width: 16px;
+  height: 16px;
+  transition: fill 0.2s ease; /* smooth color change */
+}
+
+a:hover .icon-x {
+  fill: #000;          /* black on hover of anchor */
+}
+
 
 /*# sourceMappingURL=cityride.css.map */
