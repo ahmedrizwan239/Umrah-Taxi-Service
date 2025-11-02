@@ -17761,5 +17761,43 @@ a:hover .icon-x {
   fill: #000;          /* black on hover of anchor */
 }
 
+.announcement-bar {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  line-height: 1.6;
+  font-style: italic;
+  padding: 8px 0;
+  font-size: 0.825rem;
+  color: #ffffff;
+  background-color: #111111;
+}
+
+.announcement-track {
+  display: inline-block;
+  animation: scrollMarquee 25s linear infinite;
+  will-change: transform;
+}
+
+.announcement-track span {
+  display: inline-block;
+  margin-right: 3rem; /* space between messages */
+}
+
+/* Smooth, continuous scroll */
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Optional: pause on hover like Shopify */
+/* .announcement-bar:hover .announcement-track {
+  animation-play-state: paused;
+} */
 
 /*# sourceMappingURL=cityride.css.map */
